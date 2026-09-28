@@ -1,0 +1,156 @@
+   .app {
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 1.5rem;
+   }
+
+   .header {
+     background: #0d1b2a;
+     color: #ffffff;
+     padding: 1.5rem;
+     border-radius: 8px;
+   }
+
+   .header h1 {
+     margin: 0;
+   }
+
+   .header p {
+     margin: 0.25rem 0 0;
+     opacity: 0.8;
+   }
+
+   .main {
+     padding: 2rem 0;
+     min-height: 40vh;
+   }
+
+   .footer {
+     border-top: 1px solid #dddddd;
+     padding-top: 1rem;
+     font-size: 0.85rem;
+     color: #555555;
+   }   .search label {
+     display: block;
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+   }
+
+   .search__row {
+     display: flex;
+     gap: 0.5rem;
+     flex-wrap: wrap;
+   }
+
+   .search input {
+     flex: 1;
+     min-width: 200px;
+     padding: 0.75rem;
+     border: 1px solid #bbbbbb;
+     border-radius: 6px;
+     font: inherit;
+   }
+
+   .search button {
+     padding: 0.75rem 1.5rem;
+     border: none;
+     border-radius: 6px;
+     background: #ff6b4a;
+     color: #ffffff;
+     font: inherit;
+     font-weight: 600;
+     cursor: pointer;
+   }
+
+   .search button:hover {
+     background: #e6522f;
+   }   .mensagem {
+     margin-top: 1rem;
+     color: #555555;
+   }
+
+   .mensagem--erro {
+     color: #b3261e;
+     font-weight: 600;
+   }.resultados {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gym-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.gym-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.gym-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.gym-card p {
+  margin: 0 0 0.75rem;
+  color: #555555;
+}
+
+.gym-card button {
+  border: none;
+  background: #0d1b2a;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.gym-card button:hover {
+  background: #16283d;
+}
+
+.gym-details {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f6f1e7;
+}
+
+.gym-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.gym-details li {
+  padding: 0.3rem 0;
+  border-top: 1px solid #e3dac6;
+}
+
+.gym-details li:first-child {
+  border-top: none;
+}
+
+.gym-details__fechar {
+  border: none;
+  background: transparent;
+  color: #ff6b4a;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (min-width: 720px) {
+  .resultados {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
